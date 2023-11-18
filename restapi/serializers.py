@@ -6,4 +6,11 @@ class SimpleMessagesSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SimpleMessages
-        fields = ('pk', 'title', 'message', 'created', 'image', )
+        fields = ('pk', 'title', 'message', 'created', 'image')
+
+
+class SimpleMessagesImagesSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = SimpleMessages
+        fields = ('image', )
