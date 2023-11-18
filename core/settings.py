@@ -26,6 +26,15 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Основной файл Urls
 ROOT_URLCONF = 'core.urls'
 
+# Auth
+LOGIN_URL = '/sign-in/'
+LOGIN_REDIRECT_URL = '/'
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    )
+}
+
 # Database
 DATABASES = {
     'default': {
