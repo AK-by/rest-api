@@ -47,3 +47,6 @@ docker-compose up -d --build
 
 * Докер остановить\
 docker-compose down
+
+* Зависимости\
+pip freeze > requirements.txt
