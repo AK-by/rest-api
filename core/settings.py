@@ -29,10 +29,15 @@ ROOT_URLCONF = 'core.urls'
 # Auth
 LOGIN_URL = '/sign-in/'
 LOGIN_REDIRECT_URL = '/'
+
+# Rest
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
-    )
+    ),
+    'DEFAULT_FILTER_BACKEND': (
+        'django_filters.rest_framework.DjangoFilterBackend'
+    ),
 }
 
 # Database
@@ -55,6 +60,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters',
     'core',
     'restapi',
 ]

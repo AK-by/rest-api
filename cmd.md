@@ -10,6 +10,7 @@ pip install djangorestframework
 pip install psycopg2-binary
 pip install dotenv
 pip install python-dotenv
+pip install django-filter
 
 * Корневой проект\
 django-admin startproject core .
