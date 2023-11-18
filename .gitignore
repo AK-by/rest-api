@@ -1,6 +1,10 @@
 # HTML Templates
 #templates/
 
+# Static and Media
+media/
+static/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

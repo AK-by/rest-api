@@ -8,6 +8,7 @@ class SimpleMessagesAdmin(admin.ModelAdmin):
         'title',
         'message',
         'created',
+        'image',
     )
     sortable_by = (
         'id',

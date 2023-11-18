@@ -126,10 +126,10 @@ USE_TZ = bool(os.getenv("USE_TZ"))
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = os.getenv("STATIC_URL")
+MEDIA_URL = os.getenv("MEDIA_URL")
 if DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 else:
     STATIC_ROOT = '/var/www/teach-me/static/'
-
-MEDIA_URL = os.getenv("MEDIA_URL")
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    MEDIA_ROOT = '/var/www/teach-me/media/'

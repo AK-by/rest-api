@@ -11,6 +11,7 @@ pip install psycopg2-binary
 pip install dotenv
 pip install python-dotenv
 pip install django-filter
+pip install Pillow
 
 * Корневой проект\
 django-admin startproject core .
