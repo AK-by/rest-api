@@ -4,7 +4,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # Отображать ошибки на сайте (только для разработки)
-DEBUG = True
+DEBUG = False
 
 # Переменные в окружении
 dotenv_path = join(dirname(__file__), '.env')
