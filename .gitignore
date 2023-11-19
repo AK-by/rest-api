@@ -2,8 +2,8 @@
 #templates/
 
 # Static and Media
-media/
-static/
+#media/
+#static/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
