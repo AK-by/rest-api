@@ -130,6 +130,6 @@ MEDIA_URL = os.getenv("MEDIA_URL")
 if DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-else:
-    STATIC_ROOT = '/var/www/teach-me/static/'
-    MEDIA_ROOT = '/var/www/teach-me/media/'
+# else:
+#     STATIC_ROOT = '/var/www/teach-me/static/'
+#     MEDIA_ROOT = '/var/www/teach-me/media/'
