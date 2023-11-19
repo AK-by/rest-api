@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.contrib.auth.decorators import login_required
 
 
 def index(request):
@@ -7,5 +6,5 @@ def index(request):
     return render(
         request=request,
         template_name='core/index.html',
-        context={"page_content": "core/home.html"},
+        # context={"page_content": "core/home.html"},
     )

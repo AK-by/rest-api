@@ -14,6 +14,8 @@ urlpatterns = [
     ),
     path('sign-out/', auth_views.LogoutView.as_view(next_page="/")),
     path("api/", include("restapi.urls")),
+    path("swagger/", include("swagger.urls")),
+    path("service-desk/", include("servicedesk.urls")),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -1,0 +1,16 @@
+{% load static %}
+
+<!-- Breadcrumbs: Start -->
+<div class="row">
+    <div class="container-fluid active">
+        <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            {% if breadcrumbs %}
+                {% for b in breadcrumbs %}
+                    <li class="breadcrumb-item"><a href="{{ b.href }}">{{ b.title }}</a></li>
+                {% endfor  %}
+            {% endif %}
+        </ol>
+    </div>
+</div>
+<!-- Breadcrumbs: End -->

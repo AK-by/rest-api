@@ -10,9 +10,15 @@
       data-layout-position="fixed"
       data-sidenav-size="default">
 <head>
+    {% include 'partials/top-head.html' %}
 </head>
 <body>
     <div class="wrapper">
+        {% include 'partials/top-bar.html' %}
+        {% include 'partials/top-menu.html' %}
+        {% include 'partials/top-breadcrumb-title.html' %}
+        {% include 'partials/page-content.html' %}
     </div>
+    {% include 'partials/footer-scripts.html' %}
 </body>
 </html>

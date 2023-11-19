@@ -4,7 +4,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # Отображать ошибки на сайте (только для разработки)
-DEBUG = False
+DEBUG = True
 
 # Переменные в окружении
 dotenv_path = join(dirname(__file__), '.env')
@@ -64,9 +64,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework_swagger',
     'django_filters',
     'core',
     'restapi',
+    'servicedesk',
+    'swagger',
+    'drf_yasg',
 ]
 
 # Установленные плагины и библиотеки
