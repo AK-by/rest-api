@@ -127,9 +127,12 @@ USE_TZ = bool(os.getenv("USE_TZ"))
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = os.getenv("STATIC_URL")
 MEDIA_URL = os.getenv("MEDIA_URL")
-if DEBUG:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-else:
-    STATIC_ROOT = '/home/django-restapi/rest-api/static/'
-    MEDIA_ROOT = '/home/django-media/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# if DEBUG:
+#     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# else:
+#     STATIC_ROOT = '/home/django-restapi/rest-api/static/'
+#     MEDIA_ROOT = '/home/django-media/media/'
